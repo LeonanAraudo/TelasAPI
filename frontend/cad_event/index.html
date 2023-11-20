@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CultMaps - crie seu evento</title>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body>
+    <header>
+        <div class="conteiner-header">
+            <div class="logo">
+                <h2 id="logo-cult">Cult</h2>
+                <h2 id="logo-maps">Maps</h2>
+            </div>
+            <nav class="conteiner-navBar">
+                <a href="../index.html">Página inicial</a>
+                <a href="#">Eventos</a>
+                <a href="index.html">Divulgar Evento</a>
+                <a href="../cadastro.html" id="btn_cadastro">Cadastrar-se</a>
+            </nav>
+            <div class="sub-nav">
+                <i class="fa-solid fa-bars" id="btn-menu"></i>
+            </div>
+        </div>
+    </header>
+    <form action="i.html" method="post"  enctype="application/x-www-form-urlencoded">
+        <div class="conteiner-form">
+            <h1>Crie e divulgue seu evento</h1>
+            <div class="conteiner-input">
+                <label for="nome-evento">Evento
+                    <input type="text" name="nome" id="nome" placeholder="@ex: IIFeira cultural">
+                </label>
+            </div>
+            <div class="conteiner-input">
+                <label for="tipo">Categoria do evento:</label>
+                <select name="tipo" id="tipo">
+                    <option value="tecnologia"selected>Tecnologia</option>
+                    <option value="showAoVivo" >Show ao vivo</option>
+                    <option value="filmes">filmes</option>
+                    <option value="corporativo">Corporativo</option>
+                </select>
+            </div>
+            <div class="conteiner-input">
+                <label for="tipo-evento">Empresa
+                    <input type="text" name="author" id="author" placeholder="@ex:Stamby enterprise">
+                </label>
+            </div>
+            <div class="conteiner-input">
+                <label for="descricao">Descrição do evento
+                    <input type="text" name="descricao" id="descricao" placeholder="">
+                </label>
+            </div>
+            <div class="conteiner-input">
+                <label for="data">Data do evento
+                    <input type="datetime-local" name="data" id="data">
+                </label>
+            </div>
+            <div class="conteiner-input">
+                <label for="tipo">Categoria do evento:</label>
+                <select name="localizacao" id="localizacao">
+                    <option value="Acre">Acre</option>
+                    <option value="Alagoas">Alagoas</option>
+                    <option value="Amapá">Amapá</option>
+                    <option value="Amazonas">Amazonas</option>
+                    <option value="Bahia">Bahia</option>
+                    <option value="Ceará">Ceará</option>
+                    <option value="Distrito Federal">Distrito Federal</option>
+                    <option value="Espírito Santo">Espírito Santo</option>
+                    <option value="Goiás">Goiás</option>
+                    <option value="Maranhão">Maranhão</option>
+                    <option value="Mato Grosso">Mato Grosso</option>
+                    <option value="Mato Grosso do Sul">Mato Grosso do Sul</option>
+                    <option value="Minas Gerais">Minas Gerais</option>
+                    <option value="Pará">Pará</option>
+                    <option value="Paraíba">Paraíba</option>
+                    <option value="Paraná">Paraná</option>
+                    <option value="Pernambuco">Pernambuco</option>
+                    <option value="Piauí">Piauí</option>
+                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                    <option value="Rio Grande do Norte">Rio Grande do Norte</option>
+                    <option value="Rio Grande do Sul">Rio Grande do Sul</option>
+                    <option value="Rondônia">Rondônia</option>
+                    <option value="Roraima">Roraima</option>
+                    <option value="Santa Catarina">Santa Catarina</option>
+                    <option value="São Paulo">São Paulo</option>
+                    <option value="Sergipe">Sergipe</option>
+                    <option value="Tocantins">Tocantins</option>
+                </select>
+            </div>
+            <div class="conteiner-input">
+                <label for="time">Horário do evento
+                    <input type="text" name="hora" id="hora" placeholder="@ex: 15:00">
+                </label>
+            </div>
+            <div class="conteiner-input">
+                <label for="image">imagem uploud
+                    <input type="file" name="imagem" id="imagem" placeholder="link da imagem">
+                </label>
+            </div>
+            <input type="submit" id="btn-save" value="Salvar">
+        </div>
+    </form>
+    <script src="../javascript/index.js"></script>
+</body>
+</html>
